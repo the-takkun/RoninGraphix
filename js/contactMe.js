@@ -1,6 +1,6 @@
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('contactModal');
 
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("contactBtn");
 
 var span = document.getElementsByClassName("close")[0];
 
