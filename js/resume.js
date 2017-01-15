@@ -1,19 +1,13 @@
-var modal = document.getElementById('resumeModal');
+(function() {
+  var rsBtn = document.getElementById('rsBtn');
+  var cancelButton = document.getElementById('cancel');
+  var rsDialog = document.getElementById('rsDialog');
 
-var btn = document.getElementById("resumeBtn");
+  rsBtn.addEventListener('click', function() {
+    rsDialog.showModal();
+  });
 
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+  cancelButton.addEventListener('click', function() {
+    rsDialog.close();
+  });
+})();

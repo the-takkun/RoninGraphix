@@ -1,3 +1,27 @@
+body {
+  background: url(/home/typhon/Documents/RoninGraphix/images/HOMEPAGE2.png);
+  background-position: top, center;
+  background-repeat: no-repeat;
+  background-color: #333333;
+}
+button {
+  background: none;
+  border: none;
+}
+nav {
+  display: inline-block;
+  margin-left: 550px;
+  margin-top: 325px;
+}
+#rsDialog {
+  background-color: #0D333333;
+}
+#contactBtn {
+  margin-top: 275px;
+}
+#resumeBtn {
+  margin-top: 325px;
+}
 .modal {
   display: none;
   position: fixed;
@@ -5,19 +29,20 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #0D333333;
 }
 
 .modal-content {
   text-align: center;
-  background-color: #fefefe;
+  background-color: #0D333333;
   margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
+  padding: 0;
+  border: none;
   width: 50%;
+  height: 50%;
 }
 
 .close {

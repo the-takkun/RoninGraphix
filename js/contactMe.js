@@ -1,19 +1,13 @@
-var modal = document.getElementById('contactModal');
+(function() {
+  var cntBtn = document.getElementById('cntBtn');
+  var cntCancel = document.getElementById('cntCancel');
+  var cntDialog = document.getElementById('cntDialog');
 
-var btn = document.getElementById("contactBtn");
+  cntBtn.addEventListener('click', function() {
+    cntDialog.showModal();
+  });
 
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+  cntCancel.addEventListener('click', function() {
+    cntDialog.close();
+  });
+})();
